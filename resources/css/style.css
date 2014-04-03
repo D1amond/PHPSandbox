@@ -1,0 +1,35 @@
+body{
+	background: url('../img/background.jpg');
+	background-position: top center;
+	background-repeat: no-repeat; 
+}
+
+*{
+	border-radius: 0 !important; 
+}
+
+.well{
+	border: thin black solid;
+	box-shadow: 0 0 4px black;
+}
+
+#carousel-example-generic .item img{
+	height: 327px;
+	width: 100%;
+}
+
+.btn{
+	border: thin black solid;
+	color: #333;
+	font-weight: bold;
+}
+
+	.btn:hover{
+		border: thin black solid;
+		color: #333;
+	}
+
+.avatar{
+	width: 100px;
+	border: thin solid black
+}
