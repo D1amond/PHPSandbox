@@ -9,6 +9,7 @@
             </button>
             <a class="navbar-brand" href="#">PHPSandbox</a>
         </div>
+        <a href="arrays/index.php">Arrays</a>
         <div class="navbar-collapse collapse">
             <form id="loginForm" class="navbar-form navbar-right" role="form">
                 <div class="form-group">

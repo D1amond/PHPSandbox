@@ -1,3 +1,10 @@
+<?php 
+    function baseUrl()
+    {
+        return "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,3 +17,4 @@
         <script src="../resources/js/script.js"></script>
   	</head>
     <body>
+        <?= var_dump(baseUrl()) ?>
