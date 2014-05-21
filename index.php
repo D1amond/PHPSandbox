@@ -1,26 +1,24 @@
-<?php include('../entities/Product.php') ?>
+<?php include('entities/Product.php') ?>
 <?php  
 
 $product = new Product();
 $product->name = 'canard';
 
 ?>
-<?php include('common/header.php') ?>
+<?php include('pages/common/header.php') ?>
 
-    <?php include('common/nav.php') ?>
-
-    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="well">
-                    <img class="avatar" src="http://www.bettafishcenter.com/img/Betta%20Image.jpg">
-                    <label>Identifiant</label>
-                    <label>Nombre de visites</label>
-                    <div class="pull-right">
+                    <div>
+                        <img class="avatar" src="http://www.bettafishcenter.com/img/Betta%20Image.jpg">
+                    </div>
+                    <div class="actions">
                         <a class="btn btn-primary" href="#">Profil <span class="glyphicon glyphicon-user"></span></a>
                         <a class="btn btn-default" href="#">Mes achats <span class="glyphicon glyphicon-shopping-cart"></span></a>
                         <a class="btn btn-warning" href="#">Panneau d'administration <span class="glyphicon glyphicon-cog"></span></a>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
@@ -67,6 +65,5 @@ $product->name = 'canard';
                 </div>
             </div>
         </div>
-    </div>
 
-<?php include('common/footer.php') ?>
+<?php include('pages/common/footer.php') ?>

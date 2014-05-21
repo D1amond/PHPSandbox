@@ -7,10 +7,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">PHPSandbox</a>
+            <a class="navbar-brand" href="<?= baseUrl() ?>">PHPSandbox</a>
         </div>
-        <a href="arrays/index.php">Arrays</a>
         <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="<?= baseUrl() ?>/pages/streams.php">Streams</a></li>
+            </ul>
             <form id="loginForm" class="navbar-form navbar-right" role="form">
                 <div class="form-group">
                     <input type="text" placeholder="Identifiant" class="form-control">

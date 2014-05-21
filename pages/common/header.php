@@ -1,7 +1,7 @@
 <?php 
     function baseUrl()
     {
-        return "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        return "http://" . $_SERVER['HTTP_HOST'];
     }
 ?>
 
@@ -10,11 +10,12 @@
     <head>
         <meta charset="utf-8">
         <title>PHPSandbox</title>
-        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../resources/css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="../resources/js/bootstrap.min.js"></script>
-        <script src="../resources/js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?= baseUrl() ?>/resources/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="<?= baseUrl() ?>/resources/css/style.css">
+        <script type="text/javasript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javasript" src="<?= baseUrl() ?>/resources/js/bootstrap.min.js"></script>
+        <script type="text/javasript" src="<?= baseUrl() ?>/resources/js/script.js"></script>
   	</head>
     <body>
-        <?= var_dump(baseUrl()) ?>
+        <?php include('nav.php') ?>
+        <div class="container">
